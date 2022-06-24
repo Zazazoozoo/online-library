@@ -14,20 +14,40 @@
           Книги
         </router-link>
       </div>
+      <div class="contacts">
+        <router-link
+            :to="{ name: 'contacts' }"
+        >
+          Контакты изданий
+        </router-link>
+      </div>
     </div>
   </header>
 </template>
 
 <script>
+// import axios from 'axios'
+
 export default {
-  data() {
-    return {
-      auth: false
-    }
-  },
-  created() {
-    this.auth = localStorage.getItem('auth') !== null
-  }
+  // data() {
+  //   return {
+  //     users: []
+  //   }
+  // },
+  // created() {
+  //   this.auth = localStorage.getItem('auth') !== null
+  // },
+  // methods: {
+  //   async fetchUsers() {
+  //     try {
+  //       const response = await axios.get('https://jsonplaceholder.typicode.com/users');
+  //       this.users = response.data;
+  //       console.log(response)
+  //     } catch (e) {
+  //       alert ('Ошибки')
+  //     }
+  //   }
+  // }
 }
 </script>
 
@@ -40,7 +60,8 @@ header {
     align-items: baseline;
   }
   padding: 20px 0;
-  a {
+  a,
+  .contacts {
     text-decoration: none;
     font-weight: 700;
     color: #ffffff;
@@ -55,8 +76,14 @@ header {
     display: flex;
     flex-grow: 1;
   }
+  .contacts {
+    display: flex;
+    margin-right: 535px;
+    //flex-grow: 1;
+  }
   button {
     margin-left: auto;
   }
 }
 </style>
+

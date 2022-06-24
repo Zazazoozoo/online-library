@@ -7,7 +7,7 @@
           class="search-txt"
           placeholder="Найти книгу"
       />
-      <img class="search-btn" src="https://cdn.icon-icons.com/icons2/520/PNG/512/Magnifier_icon-icons.com_52024.png">
+      <img class="search-btn" src="https://cdn.icon-icons.com/icons2/2575/PNG/512/analysis_analytics_magnifier_search_locate_magnifyng_glass_icon_153884.png">
     </div>
     <br/>
     <book-card
@@ -20,10 +20,9 @@
 </template>
 
 <script>
-import BookCard from './BookCard'
+import BookCard from '@/components/BookCard'
 import books from '@/mocks/books'
 
-//только добавила этот дата-блок и created
 export default {
   data() {
     return {
@@ -66,9 +65,9 @@ export default {
   padding: 10px;
 }
 .search-btn {
-  position: fixed;
+  position: absolute;
   float: right;
-  margin-top: -40px;
+  margin-top: 5px;
   //margin-right: 5px;
   width: 35px;
   height: 35px;

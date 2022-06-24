@@ -1,25 +1,24 @@
 <template>
   <div class="books-page container">
-    <h2>Выбери книгу на свой вкус</h2>
-    <books-list :books="books"/>
+    <h2>Контакты партнеров-изданий</h2>
+    <info-publication :users="users"/>
   </div>
 </template>
 
 <script>
-import BooksList from '@/components/BooksList'
-import books from '@/mocks/books'
-
+import InfoPublication from "@/components/InfoPublication";
+import users from "@/mocks/contacts";
 
 export default {
-  components: {BooksList},
+  components: {InfoPublication},
   data() {
     return {
-      books,
-      searchHandler: ''
+      users
     }
   }
 }
 </script>
+
 
 <style lang="scss" scoped>
 .container {

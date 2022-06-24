@@ -8,7 +8,7 @@
       >
       <div class="section">
         <p class="section__title">Автор:</p>
-        <p class="section__description">{{ book.autor}}</p>
+        <p class="section__description">{{ book.author}}</p>
       </div>
       <div class="section">
         <p class="section__title">Сюжет:</p>
