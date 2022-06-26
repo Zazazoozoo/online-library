@@ -1,6 +1,6 @@
 <template>
   <div class="books-page container">
-    <h2>Контакты партнеров-изданий</h2>
+    <h2>Контакты издательств</h2>
     <info-publication :users="users"/>
   </div>
 </template>

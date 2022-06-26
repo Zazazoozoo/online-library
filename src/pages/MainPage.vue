@@ -3,7 +3,7 @@
     <h1>
       Онлайн библиотека
     </h1>
-    <button type="button" class="btn btn-outline-light" @click="$router.push({name: 'books'})">Перейти к книгам</button>>
+    <button type="button" class="btn btn-outline-light" @click="$router.push({name: 'books'})">Перейти к книгам</button>
   </div>
 </template>
 
